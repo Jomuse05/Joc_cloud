@@ -1,7 +1,7 @@
 const GAME_SECONDS = 10;
 const RANKING_KEY = "click-game-ranking";
 
-const API_URL = "https://la-teva-funcio.azurewebsites.net/api";
+const API_URL = "https://api-ranking-gddv-arcva6h0aqfybycz.spaincentral-01.azurewebsites.net/api/manageranking";
 const startScreen = document.querySelector("#start-screen");
 const gameScreen = document.querySelector("#game-screen");
 const endScreen = document.querySelector("#end-screen");
