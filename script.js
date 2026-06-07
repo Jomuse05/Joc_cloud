@@ -89,7 +89,7 @@ function formatTime(totalSeconds) {
 
 async function getRanking() {
   try {
-    const response = await fetch(`${API_URL}/getRanking`);
+    const response = await fetch(`${API_URL}`);
     if (!response.ok) throw new Error("Error a la xarxa");
     return await response.json();
   } catch (error) {
@@ -100,7 +100,7 @@ async function getRanking() {
 
 async function saveScore(name, score) {
   try {
-    await fetch(`${API_URL}/saveScore`, {
+    await fetch(`${API_URL}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, score })
